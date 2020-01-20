@@ -15,6 +15,42 @@ html, body {
 
     .page-content-con {
         padding:20px;
+        .button {
+
+        }
+        .stock-table {
+            .button {
+                width: 65px;
+            }
+            .symbol-name {
+                font-weight: bold;
+            }
+            .sortable-header {
+                color: darkblue;
+                text-decoration: underline;
+            }
+            .sortable-header:hover {
+                color: green;
+            }
+            .bgWarn {
+                background-color: hsl(0, 55%, 60%);
+                font-weight: bold;
+            }
+            .overflow-cell {
+                max-width: 220px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .overflow-cell:hover {
+                overflow: visible;
+            }
+            .numeric {
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+
     }
 
     .primary-heading-con {

@@ -24,6 +24,13 @@
                     >
                         <i class="fa fa-tags"></i>
                     </router-link>
+                    <!--<router-link
+                        :to="{ name : $ROUTES.DETAILED }"
+                        exact
+                        class="item tooltip is-tooltip-right"
+                        data-tooltip="Detailed View"
+                    >
+                    </router-link>-->
                 </div>
             </div>
 

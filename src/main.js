@@ -20,6 +20,7 @@ import DropdownSelection from './elements/DropdownSelection'
 import PluralWord from './elements/PluralWord';
 import OxfordCommaList from './elements/OxfordCommaList';
 import DocumentTitle from './components/DocumentTitle';
+import Chart from './components/Chart';
 
 // Register Custom Elements
 Vue.component('loading', Loading);
@@ -34,6 +35,7 @@ Vue.component('dropdown-selection', DropdownSelection);
 Vue.component('plural-word', PluralWord);
 Vue.component('oxford-comma-list', OxfordCommaList);
 Vue.component('DocumentTitle', DocumentTitle);
+Vue.component('Chart', Chart);
 
 //Custom Layouts
 import AppLayout from './layouts/AppLayout'

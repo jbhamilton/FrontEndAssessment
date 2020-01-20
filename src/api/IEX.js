@@ -9,4 +9,7 @@ export default {
     getCompanies () {
         return api.get(`/stock/market/collection/tag?collectionName=${collection}&token=${token}`);
     },
+    getSingle (symbol) {
+        return api.get(`/stock/${symbol}/batch?types=quote,chart,stats,logo&range=2y&last=10&token=${token}`)
+    }
 }
