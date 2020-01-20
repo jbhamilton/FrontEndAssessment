@@ -19,8 +19,11 @@ The largest sticking point for me was the related to caveat 1 in the first link 
 What was going on is I declared a variable in the tracked data section as an empty object and later added its properties, as below. The added properties were not tracked, due to an entirely separate aspect of Vue's rendering model, described in the second link, which describes the actual problem and solution.
 
 symbolGroups : []
+
 this.symbolgroups[company.symbol] = 'default';
-https://vuejs.org/v2/guide/list.html#Array-Change-Detection
+
+https://vuejs.org/v2/guide/list.html#Array-Change-Detection 
+
 https://vuejs.org/v2/guide/reactivity.html
 
 Coloring text in the "Daily Change" column - which depends on element-specific calculations of v-for generated elements - took me longer than it should have. I wanted to try to make an in-line expression satisfy the need, but v:bind would only take a variable or a computed property, and using computed properties on a v-for generated set of entries is either not supported or not commonly talked about. The latter presumption based is upon the large amount of reading I've done on the subject, trying to learn the feature and tick the "things that will distinguish you" box. I tried returning html through a function return, but it didn't play nicely in my table.
